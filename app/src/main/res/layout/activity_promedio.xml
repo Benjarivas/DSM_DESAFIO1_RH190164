@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp"
+        tools:context=".PromedioActivity">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Cálculo de Promedio"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:layout_marginBottom="16dp"/>
+
+        <!-- Nombre del estudiante -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Nombre del estudiante:"
+            android:textSize="16sp"
+            android:layout_marginTop="8dp" />
+
+        <EditText
+            android:id="@+id/editTextNombre"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Ingrese nombre completo"
+            android:inputType="textPersonName"
+            android:layout_marginBottom="16dp"
+            android:minHeight="48dp"/>
+
+        <!-- Nota 1 (15%) -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Nota 1 (15%):"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/editTextNota1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Ingrese nota (0-10)"
+            android:inputType="numberDecimal"
+            android:layout_marginBottom="8dp"
+            android:minHeight="48dp"/>
+
+        <!-- Nota 2 (15%) -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Nota 2 (15%):"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/editTextNota2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Ingrese nota (0-10)"
+            android:inputType="numberDecimal"
+            android:layout_marginBottom="8dp"
+            android:minHeight="48dp"/>
+
+        <!-- Nota 3 (20%) -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Nota 3 (20%):"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/editTextNota3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Ingrese nota (0-10)"
+            android:inputType="numberDecimal"
+            android:layout_marginBottom="8dp"
+            android:minHeight="48dp"/>
+
+        <!-- Nota 4 (25%) -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Nota 4 (25%):"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/editTextNota4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Ingrese nota (0-10)"
+            android:inputType="numberDecimal"
+            android:layout_marginBottom="8dp"
+            android:minHeight="48dp"/>
+
+        <!-- Nota 5 (25%) -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Nota 5 (25%):"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/editTextNota5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Ingrese nota (0-10)"
+            android:inputType="numberDecimal"
+            android:layout_marginBottom="16dp"
+            android:minHeight="48dp"/>
+
+        <!-- Botón para calcular -->
+        <Button
+            android:id="@+id/buttonCalcular"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Calcular Promedio"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Resultado -->
+        <TextView
+            android:id="@+id/textViewResultado"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textSize="18sp"
+            android:layout_marginTop="16dp"
+            android:padding="8dp"
+            android:background="#E0E0E0" />
+
+    </LinearLayout>
+</ScrollView>

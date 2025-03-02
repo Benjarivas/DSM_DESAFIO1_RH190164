@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp"
+        tools:context=".CalculadoraActivity">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Calculadora Básica"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Operando 1 -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Operando 1:"
+            android:textSize="16sp"
+            android:layout_marginTop="8dp" />
+
+        <EditText
+            android:id="@+id/editTextOperando1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Ingrese el primer número"
+            android:inputType="numberDecimal|numberSigned"
+            android:layout_marginBottom="16dp"
+            android:minHeight="48dp"/>
+
+        <!-- Operando 2 -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Operando 2:"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/editTextOperando2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Ingrese el segundo número"
+            android:inputType="numberDecimal|numberSigned"
+            android:layout_marginBottom="16dp"
+            android:minHeight="48dp"/>
+
+        <!-- Operación a realizar -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Operación a realizar:"
+            android:textSize="16sp"
+            android:layout_marginBottom="8dp" />
+
+        <RadioGroup
+            android:id="@+id/radioGroupOperacion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginBottom="16dp">
+
+            <RadioButton
+                android:id="@+id/radioButtonSuma"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Suma" />
+
+            <RadioButton
+                android:id="@+id/radioButtonResta"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Resta" />
+
+            <RadioButton
+                android:id="@+id/radioButtonMultiplicacion"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Multiplicación" />
+
+            <RadioButton
+                android:id="@+id/radioButtonDivision"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="División" />
+
+            <RadioButton
+                android:id="@+id/radioButtonExponente"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Exponente" />
+
+            <RadioButton
+                android:id="@+id/radioButtonRaiz"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Raíz cuadrada" />
+        </RadioGroup>
+
+        <!-- Botón para calcular -->
+        <Button
+            android:id="@+id/buttonCalcularOperacion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Calcular"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Resultado -->
+        <TextView
+            android:id="@+id/textViewResultadoOperacion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textSize="18sp"
+            android:layout_marginTop="16dp"
+            android:padding="8dp"
+            android:background="#E0E0E0" />
+
+    </LinearLayout>
+</ScrollView>
